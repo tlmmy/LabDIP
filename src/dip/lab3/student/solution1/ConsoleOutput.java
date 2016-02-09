@@ -4,18 +4,19 @@
  * and open the template in the editor.
  */
 package dip.lab3.student.solution1;
-import javax.swing.JOptionPane;
+
 /**
  *
  * @author L152Student
  */
-public class GUIReader implements MessengerInput{
-    private String input;
+public class ConsoleOutput implements MessengerOutput{
+    private String output;
+
     
+
     @Override
-    public String inputMessage() {
-        return input = JOptionPane.showInputDialog(null, "Please enter your message:");
-       
-        
+    public void outputMessage(String input) {
+        System.out.println(input);
     }
+    
 }

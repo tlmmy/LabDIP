@@ -11,8 +11,8 @@ package dip.lab3.student.solution1;
  */
 public class StartUp {
     public static void main(String[] args) {
-        MessengerOutput output = new ConsoleWriter();
-        MessengerInput input = new GUIReader();
+        MessengerOutput output = new ConsoleOutput();
+        MessengerInput input = new GUIInput();
         
         Messenger messenger = new Messenger(input, output);
         
