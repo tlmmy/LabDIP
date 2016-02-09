@@ -23,18 +23,18 @@ public class TipCalculator {
 
     
     
-    public double calculateTip(){
+    public double calculateBillWithTip(){
         double tip = 0.00; // always initialize local variables
 
         switch(serviceQuality) {
             case GOOD:
-                tip = service.getBill() * .2;
+                tip = service.getBill() * 1.2;
                 break;
             case FAIR:
-                tip = service.getBill() * .15;
+                tip = service.getBill() * 1.15;
                 break;
             case POOR:
-                tip = service.getBill() * .1;
+                tip = service.getBill() * 1.1;
                 break;
         }
 
