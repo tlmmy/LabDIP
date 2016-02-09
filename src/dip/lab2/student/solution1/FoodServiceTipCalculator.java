@@ -9,7 +9,7 @@ package dip.lab2.student.solution1;
  *
  * @author L152Student
  */
-public class FoodServiceTipCalculator implements TipService{
+public class FoodServiceTipCalculator implements TipCalculator{
     private double bill;
 
     public FoodServiceTipCalculator(double bill) {

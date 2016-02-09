@@ -7,48 +7,8 @@ package dip.lab2.student.solution1;
 
 /**
  *
- * @author L152Student
+ * @author trogers8
  */
-public class TipCalculator {
-       TipService service;
-       public enum ServiceQuality {
-        GOOD, FAIR, POOR
-    }
-    private ServiceQuality serviceQuality;
-
-    public TipCalculator(TipService service, ServiceQuality serviceQuality) {
-        this.service = service;
-        this.serviceQuality = serviceQuality;
-    }
-
-    
-    
-    public double calculateBillWithTip(){
-        double tip = 0.00; // always initialize local variables
-
-        switch(serviceQuality) {
-            case GOOD:
-                tip = service.getBill() * 1.2;
-                break;
-            case FAIR:
-                tip = service.getBill() * 1.15;
-                break;
-            case POOR:
-                tip = service.getBill() * 1.1;
-                break;
-        }
-
-        return tip;
-    }
-
-    public ServiceQuality getServiceQuality() {
-        return serviceQuality;
-    }
-
-    public void setServiceQuality(ServiceQuality serviceQuality) {
-        this.serviceQuality = serviceQuality;
-    }
-    
-    
-    
+public interface TipCalculator {
+    public abstract double getBill();
 }

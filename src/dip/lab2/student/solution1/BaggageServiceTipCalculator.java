@@ -12,7 +12,7 @@ import java.util.Set;
  *
  * @author L152Student
  */
-public class BaggageServiceTipCalculator implements TipService{
+public class BaggageServiceTipCalculator implements TipCalculator{
     private double baseTipPerBag;
     private int bagCount;
     private double bill;

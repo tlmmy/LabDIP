@@ -17,8 +17,8 @@ public class StartUp {
     };
  
     public static void main(String[] args) {
-        TipService tip = new BaggageServiceTipCalculator(2, 2);
-        TipCalculator calc = new TipCalculator(tip, TipCalculator.ServiceQuality.FAIR);
+        TipCalculator tip = new BaggageServiceTipCalculator(2, 2);
+        TipService calc = new TipService(tip, TipService.ServiceQuality.FAIR);
         
         System.out.println(calc.calculateBillWithTip());
     }
