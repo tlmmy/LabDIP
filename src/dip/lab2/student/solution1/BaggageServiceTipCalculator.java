@@ -12,41 +12,24 @@ import java.util.Set;
  *
  * @author L152Student
  */
-public class BaggageServiceTipCalculator implements TipCalculator{
+public class BaggageServiceTipCalculator implements TipService{
     private double baseTipPerBag;
     private int bagCount;
+    private double bill;
+
+    public BaggageServiceTipCalculator(double baseTipPerBag, int bagCount) {
+        this.baseTipPerBag = baseTipPerBag;
+        this.bagCount = bagCount;
+    }
 
     
     
-    public enum ServiceQuality {
-        GOOD, FAIR, POOR
-    }
-    private ServiceQuality serviceQuality;
-
-    public BaggageServiceTipCalculator(ServiceQuality q, int bags, double baseTipPerBag) {
-        this.setServiceQuality(q);
-        this.setBagCount(bags);
-        this.setBaseTipPerBag(baseTipPerBag);
-    }
     
     @Override
-     public double calculateTip() {
-        double tip = 0.00; // always initialize local variables
-
-        switch(serviceQuality) {
-            case GOOD:
-                tip = baseTipPerBag * bagCount * 1.2;
-                break;
-            case FAIR:
-                tip = baseTipPerBag * bagCount * 1.15;
-                break;
-            case POOR:
-                tip = baseTipPerBag * bagCount * 1.1;
-                break;
-        }
-
-        return tip;
+    public double getBill(){
+        return bill = baseTipPerBag * bagCount;
     }
+     
 
     public double getBaseTipPerBag() {
         return baseTipPerBag;
@@ -72,14 +55,7 @@ public class BaggageServiceTipCalculator implements TipCalculator{
         this.bagCount = bagCount;
     }
 
-    public ServiceQuality getServiceQuality() {
-        return serviceQuality;
-    }
 
-    public void setServiceQuality(ServiceQuality serviceQuality) {
-        this.serviceQuality = serviceQuality;
-    }
-    
     
     
 }
