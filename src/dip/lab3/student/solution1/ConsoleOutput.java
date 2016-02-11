@@ -10,10 +10,7 @@ package dip.lab3.student.solution1;
  * @author L152Student
  */
 public class ConsoleOutput implements MessengerOutput{
-    private String output;
-
     
-
     @Override
     public void outputMessage(String input) {
         System.out.println(input);

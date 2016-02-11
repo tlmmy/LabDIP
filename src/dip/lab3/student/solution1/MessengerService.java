@@ -9,11 +9,11 @@ package dip.lab3.student.solution1;
  *
  * @author L152Student
  */
-public class Messenger {
+public class MessengerService {
     private MessengerInput input;
     private MessengerOutput output;
 
-    public Messenger(MessengerInput input, MessengerOutput output) {
+    public MessengerService(MessengerInput input, MessengerOutput output) {
         this.input = input;
         this.output = output;
     }

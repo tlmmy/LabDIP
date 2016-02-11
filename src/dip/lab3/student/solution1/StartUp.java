@@ -14,7 +14,7 @@ public class StartUp {
         MessengerOutput output = new ConsoleOutput();
         MessengerInput input = new GUIInput();
         
-        Messenger messenger = new Messenger(input, output);
+        MessengerService messenger = new MessengerService(input, output);
         
         messenger.sendMessage();
     }

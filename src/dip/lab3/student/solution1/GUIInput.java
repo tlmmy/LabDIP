@@ -11,6 +11,8 @@ import javax.swing.JOptionPane;
  */
 public class GUIInput implements MessengerInput{
     private String input;
+
+     
     
     @Override
     public String inputMessage() {
