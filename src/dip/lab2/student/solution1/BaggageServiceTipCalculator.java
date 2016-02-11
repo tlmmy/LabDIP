@@ -51,6 +51,33 @@ public class BaggageServiceTipCalculator implements TipCalculator{
 
         return tip;
     }
+
+    public double getGoodRATE() {
+        return goodRATE;
+    }
+
+    public void setGoodRATE(double goodRATE) {
+        this.goodRATE = goodRATE;
+    }
+
+    public double getFairRATE() {
+        return fairRATE;
+    }
+
+    public void setFairRATE(double fairRATE) {
+        this.fairRATE = fairRATE;
+    }
+
+    public double getPoorRATE() {
+        return poorRATE;
+    }
+
+    public void setPoorRATE(double poorRATE) {
+        this.poorRATE = poorRATE;
+    }
+    
+    
+    
     @Override
     public final void setServiceRating(ServiceQuality q) {
         // No need to validate because enums provide type safety!
