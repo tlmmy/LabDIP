@@ -10,7 +10,7 @@ package dip.lab2.student.solution1;
  * @author L152Student
  */
 public class TipService {
-       TipCalculator service;
+       private TipCalculator service;
        
     
 
