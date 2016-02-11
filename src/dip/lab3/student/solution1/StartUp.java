@@ -11,10 +11,10 @@ package dip.lab3.student.solution1;
  */
 public class StartUp {
     public static void main(String[] args) {
-        MessengerOutput output = new GUIOutput();
-        MessengerInput input = new ConsoleInput();
+        MessageOutput output = new GUIOutput();
+        MessageInput input = new ConsoleInput();
         
-        MessengerService messenger = new MessengerService(input, output);
+        MessageService messenger = new MessageService(input, output);
         
         messenger.sendMessage();
     }

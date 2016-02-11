@@ -9,6 +9,6 @@ package dip.lab3.student.solution1;
  *
  * @author L152Student
  */
-public interface MessengerOutput{
-    public abstract void outputMessage(String input);
+public interface MessageInput{
+    public abstract String inputMessage();
 }

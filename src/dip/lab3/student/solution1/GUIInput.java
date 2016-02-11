@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
  *
  * @author L152Student
  */
-public class GUIInput implements MessengerInput{
+public class GUIInput implements MessageInput{
     private String input;
 
      

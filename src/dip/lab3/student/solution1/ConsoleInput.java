@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author L152Student
  */
-public class ConsoleInput implements MessengerInput {
+public class ConsoleInput implements MessageInput {
     private String input;
     private Scanner key = new Scanner(System.in);
 

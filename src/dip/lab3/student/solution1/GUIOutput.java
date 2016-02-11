@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author L152Student
  */
-public class GUIOutput implements MessengerOutput{
+public class GUIOutput implements MessageOutput{
     @Override
     public void outputMessage( String line ) {
             JOptionPane.showMessageDialog(null, line);

@@ -10,7 +10,7 @@ package dip.lab1.student.solution1;
  * @author L152Student
  */
 public class HRService {
-      public double getAnnualCompensationForEmployee(Employee e) {
+    public double getAnnualCompensationForEmployee(Employee e) {
         return e.getAnnualWages();
     }
 }

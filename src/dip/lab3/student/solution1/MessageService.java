@@ -9,28 +9,28 @@ package dip.lab3.student.solution1;
  *
  * @author L152Student
  */
-public class MessengerService {
-    private MessengerInput input;
-    private MessengerOutput output;
+public class MessageService {
+    private MessageInput input;
+    private MessageOutput output;
 
-    public MessengerService(MessengerInput input, MessengerOutput output) {
+    public MessageService(MessageInput input, MessageOutput output) {
         this.input = input;
         this.output = output;
     }
 
-    public MessengerInput getInput() {
+    public MessageInput getInput() {
         return input;
     }
 
-    public void setInput(MessengerInput input) {
+    public void setInput(MessageInput input) {
         this.input = input;
     }
 
-    public MessengerOutput getOutput() {
+    public MessageOutput getOutput() {
         return output;
     }
 
-    public void setOutput(MessengerOutput output) {
+    public void setOutput(MessageOutput output) {
         this.output = output;
     }
 
