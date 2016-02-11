@@ -17,6 +17,24 @@ public class MessengerService {
         this.input = input;
         this.output = output;
     }
+
+    public MessengerInput getInput() {
+        return input;
+    }
+
+    public void setInput(MessengerInput input) {
+        this.input = input;
+    }
+
+    public MessengerOutput getOutput() {
+        return output;
+    }
+
+    public void setOutput(MessengerOutput output) {
+        this.output = output;
+    }
+
+    
     
     public void sendMessage(){
         String line = input.inputMessage();
