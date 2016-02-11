@@ -7,9 +7,8 @@ package dip.lab2.student.solution1;
 
 /**
  *
- * @author trogers8
+ * @author L152Student
  */
-public interface TipCalculator {
-    public abstract double getTip();
-     public abstract void setServiceRating(ServiceQuality q);
+public enum ServiceQuality {
+    GOOD, FAIR, POOR
 }

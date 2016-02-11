@@ -12,14 +12,12 @@ package dip.lab2.student.solution1;
  * @author L152Student
  */
 public class StartUp {
-      public static enum ServiceQuality {
-           GOOD, FAIR, POOR
-    };
+      
  
     public static void main(String[] args) {
-        TipCalculator tip = new BaggageServiceTipCalculator(2, 2);
-        TipService calc = new TipService(tip, TipService.ServiceQuality.FAIR);
+        TipCalculator tip = new BaggageServiceTipCalculator(ServiceQuality.GOOD,2);
+        TipService calc = new TipService(tip);
         
-        System.out.println(calc.calculateBillWithTip());
+        System.out.println(calc.getTip());
     }
 }
